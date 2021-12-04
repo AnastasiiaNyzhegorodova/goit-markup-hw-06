@@ -414,6 +414,44 @@
                 <use href="./images/icons.svg#button-modal"></use>
             </svg>
         </button>
+        <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#">
+            <div class="modal-field-container">                
+                <input type="text" 
+                        class="modal-input" 
+                        name="user-name" 
+                        id="user-name"                   
+                        required>
+                <label for="user-name" class="modal-lable">Имя</label>
+            </div>
+            <div class="modal-field-container">                
+                <input type="tel" 
+                        class="modal-input" 
+                        name="user-tel"
+                        id="user-tel"
+                        required>
+                <label for="user-tel" class="modal-lable">Телефон</label>
+            </div>
+            <div class="modal-field-container">                
+                <input type="email"
+                        class="modal-input" 
+                        name="user-email" 
+                        id="user-email"                                     
+                        required>
+                <label for="user-email" class="modal-lable">Почта</label>
+            </div>
+            <label for="comments" class="modal-lable-text">Комментарий</label>
+            <textarea name="comments"
+                    class="modal-comments"
+                    placeholder="Введите текст"                                    
+                    id=""></textarea>            
+            <input type="checkbox"
+                    class="modal-checkbox"
+                    value="Соглашаюсь с рассылкой и принимаю Условия договора">
+            <label for="" 
+                    class="modal-lable-text">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            <button type="submit" class="modal-form-btn">Отправить</button>
+        </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
