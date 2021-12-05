@@ -617,7 +617,8 @@ body {
   border-left: 1px solid #eeeeee;
 }
 
-/* FOOTER */
+/* -------------------------------FOOTER------------------------------------- */
+
 .footer {
   padding: 60px 0;
   height: 252px;
@@ -728,6 +729,10 @@ body {
   fill: currentColor;
 }
 
+.footer-form {
+  display: flex;
+}
+
 .footer-newsletter-text {
 margin-bottom: 20px;
 
@@ -739,7 +744,7 @@ text-transform: uppercase;
 color: var(--second-text-color);
 }
 
-/* -------Backdrop Modal ------- */
+/* ----------------------------------------Backdrop Modal -------------------------------------------- */
 
 .backdrop {
   position: fixed;
