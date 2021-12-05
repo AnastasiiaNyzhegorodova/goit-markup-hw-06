@@ -682,12 +682,12 @@ body {
 .footer-tittle-social {
   margin-bottom: 20px;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--second-text-color);
 }
 
 .team-social-list {
@@ -726,6 +726,17 @@ body {
 
 .footer-social-icon {
   fill: currentColor;
+}
+
+.footer-newsletter-text {
+margin-bottom: 20px;
+
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--second-text-color);
 }
 
 /* -------Backdrop Modal ------- */
@@ -804,10 +815,14 @@ body {
   color: var(--title-text-color);
 }
 
+.modal-field-container {
+   margin-bottom: 28px;
+}
+
 .modal-input {
   width: 100%;
   height: 40px;
-  padding: 0 10px;
+  padding: 0 10px 0 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -815,9 +830,24 @@ body {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.modal-lable {
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-label {
   display: block;
   margin-bottom: 4px;
 
@@ -827,9 +857,17 @@ body {
   color: var(--main-text-color);
 }
 
-.modal-field-container {
-  margin-bottom: 28px;
+.modal-form-icon {
+  position: absolute;
+
+  display: block;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .modal-comments {
   height: 120px;
@@ -839,6 +877,12 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comments:focus {
+border-color: var(--accent-color);
 }
 
 .modal-comments::placeholder {
@@ -859,6 +903,7 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
@@ -866,6 +911,11 @@ body {
   color: var(--second-text-color);
   background: var(--accent-color);
   border-color: transparent;
+  cursor: pointer;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:hover, .modal-form-btn:focus {
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
