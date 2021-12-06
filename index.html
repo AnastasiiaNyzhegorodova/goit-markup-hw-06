@@ -535,7 +535,7 @@
                 autofocus
               />
               <svg class="modal-form-icon" width="12" height="12">
-                <use href="./images/icons.svg#person-black"></use>
+                <use href="./images/icons.svg#modal-person"></use>
               </svg>
             </div>
           </div>
@@ -550,7 +550,7 @@
                 required
               />
               <svg class="modal-form-icon" width="13" height="13">
-                <use href="./images/icons.svg#phone-black"></use>
+                <use href="./images/icons.svg#modal-tel"></use>
               </svg>
             </div>
           </div>
@@ -564,9 +564,8 @@
                 id="user-email"
                 required
               />
-
               <svg class="modal-form-icon" width="15" height="12">
-                <use href="./images/icons.svg#email-black"></use>
+                <use href="./images/icons.svg#modal-email"></use>
               </svg>
             </div>
           </div>
@@ -574,30 +573,25 @@
           <textarea
             name="comments"
             class="modal-comments"
-            placeholder="Введите текст"></textarea>
-          <label for="policy" class="modal-checkbox-text">
-          <input
-            type="checkbox"
-            class="modal-checkbox"
-            name="policy"
-            id="policy"
-            value="Соглашаюсь с рассылкой и принимаю Условия договора"/>         
-            <span class="modal-custom-checkbox">
-              <svg class="modal-custom-icon">
-                <use
-                  href="./images/icons.svg#Vector-2-1"
-                  width="11"
-                  height="8"
-                ></use>
-              </svg>
-            </span>
-            Соглашаюсь с рассылкой и принимаю
-            <span>
-              <a href="">
-              Условия договора
-            </span>
-          </a> 
-          </label>
+            placeholder="Введите текст"
+          ></textarea>
+          <div class="modal-checkbox-wrap">
+            <input
+              type="checkbox"
+              class="modal-checkbox visually-hidden"
+              name="policy"
+              id="policy"
+            />
+            <label for="policy" class="modal-checkbox-text">
+              <span class="modal-custom-checkbox">
+                <svg class="modal-custom-icon" width="11" height="8">
+                  <use href="./images/icons.svg#Vector-2-1"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="" class="policy-link"> Условия договора </a>
+            </label>
+          </div>
           <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
       </div>
