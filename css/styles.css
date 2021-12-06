@@ -961,12 +961,13 @@ body {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+ 
 
 .modal-custom-checkbox {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
-
+  justify-content: center;
+  margin-right: 8px;
   width: 16px;
   height: 15px;
 
@@ -979,10 +980,13 @@ body {
 }
 
 .modal-checkbox-text {
+  display: flex;
+align-items: center;
+
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color:  var(--main-text-color);
 }
 
 .modal-form-btn {
