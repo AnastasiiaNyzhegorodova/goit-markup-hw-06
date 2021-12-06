@@ -402,6 +402,24 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-newsletter">
+                <p class="footer-newsletter-text">Подпишитесь на рассылку</p>
+                <form action="#">
+                    <div class="footer-input-button-wrap">
+                        <input type="text" class="footer-input" name="footer-email" placeholder="E-mail" autofocus>            
+                        <div class="footer-link-container">
+                            <a href="" class="link footer-form-link">
+                                <button class="footer-button"> Подписаться
+                                    <svg class="footer-form-icon" width="24" height="24">
+                                        <use href="./images/icons.svg#icon-send"></use>
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -463,9 +481,11 @@
                     id=""></textarea>            
             <input type="checkbox"
                     class="modal-checkbox"
+                    name="policy"
+                    id="policy"
                     value="Соглашаюсь с рассылкой и принимаю Условия договора">
-            <label for="" 
-                    class="modal-lable-text">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            <label for="policy" 
+                    class="modal-checkbox-text"><span class="modal-custom-check"></span>Соглашаюсь с рассылкой и принимаю Условия договора</label>
             <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
         </div>
